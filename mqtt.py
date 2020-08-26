@@ -1,3 +1,5 @@
+#combined a couple of examples to make this basic PAHO python implementation
+
 import paho.mqtt.client as paho
 import time
 broker = "broker.mqttdashboard.com"
