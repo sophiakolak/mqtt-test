@@ -8,7 +8,9 @@ def on_message(client, userdata, message):
     print("message retain flag=",message.retain)
 ########################################
 
-#start using mosquitto -c new.conf -v
+#to start mosquitto go to the mosquitto installation and run "mosquitto -c new.conf -v"
+#nescessary cuz I created a custom .conf file and -v for verbose mode
+
 broker_address="localhost"
 client = mqtt.Client('test client')
 client.connect(broker_address, port=1883)
